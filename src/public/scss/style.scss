@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// body {
+//     background-color: #1b3b1a; /* verde escuro, estilo mesa de truco */
+//     background-image: url('/public/assets/bg-truco-textura.png'); /* imagem personalizada */
+//     background-repeat: repeat;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     color: #fff; /* texto branco para contraste */
+//   }
+
+body {
+    background-image: url(../img/fundo-truco-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f3f6f9;
+
+    .header {
+        width: 100%;
+        height: 100px;
+        background: #1b3b1a;
+
+        .logo,
+        img {
+            height: 100px;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4px;
+        }
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 20px;
+
+        .inicio {
+            .entrada {
+                text-align: center;
+                font-family:
+                    system-ui,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Roboto,
+                    Oxygen,
+                    Ubuntu,
+                    Cantarell,
+                    "Open Sans",
+                    "Helvetica Neue",
+                    sans-serif;
+
+                .title {
+                    font-size: 30px;
+                    padding: 40px 0 10pc;
+                }
+
+                // .sub-title {
+                //     font-size: 25px;
+                //     padding: 5pc 0 1pc;
+                //     color: #4e864c;
+                // }
+
+                .btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: background-color 0.5s ease;
+
+                    button {
+                        width: 150px;
+                        height: 45px;
+                        background: #4e864c;
+                        border: none;
+                        border-radius: 4px;
+                        color: #f3f6f9;
+                        font-size: large;
+                        cursor: pointer;
+                    }
+
+                    :hover {
+                        transition: all 0.3s;
+                        background: #1b3b1a;
+                        color: rgb(125,194,122);
+                        box-shadow: -1px 37px 73px -13px rgba(78, 134, 76, 0.74);
+                        -webkit-box-shadow: -1px 37px 73px -13px rgba(78, 134, 76, 0.74);
+                        -moz-box-shadow: -1px 37px 73px -13px rgba(78, 134, 76, 0.74);
+                    }
+                }
+            }
+        }
+    }
+
+    /*RESPONSIVIDADE*/
+
+    @media (max-width: 768px) {
+        .header {
+            background: transparent;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .header {
+            background: transparent;
+        }
+        button {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .header {
+            background: transparent;
+        }
+        button {
+            padding: 6px 12px;
+            font-size: 13px;
+        }
+    }
+}
